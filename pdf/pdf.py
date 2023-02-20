@@ -8,7 +8,7 @@ from xblock.fields import Scope, String, Boolean
 from xblock.fragment import Fragment
 from xblockutils.resources import ResourceLoader
 from xblockutils.settings import XBlockWithSettingsMixin, ThemableXBlockMixin
-from xblock.scorable import ScorableXBlockMixin, Score
+#from xblock.scorable import ScorableXBlockMixin, Score
 from .utils import _, DummyTranslationService
 
 loader = ResourceLoader(__name__)
@@ -16,7 +16,7 @@ loader = ResourceLoader(__name__)
 @XBlock.wants('settings')
 @XBlock.needs('i18n')
 class PdfBlock(
-    ScorableXBlockMixin,
+#    ScorableXBlockMixin,
     XBlock,
     XBlockWithSettingsMixin,
     ThemableXBlockMixin
